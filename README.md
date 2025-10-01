@@ -1,16 +1,42 @@
-# project_assignment
 
-A new Flutter project.
+A Flutter mobile app that demonstrates:  
+- **Firebase Authentication** (Login & Register)  
+- **API Integration** with [JSONPlaceholder](https://jsonplaceholder.typicode.com/albums)  
+- **State Management** using **Cubit (flutter_bloc)**  
+- **Responsive UI** (Mobile & Tablet support)  
+- **Animations** (Hero, Fade, Slide Up)  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Features  
 
-A few resources to get you started if this is your first Flutter project:
+### Authentication  
+- User **Login** & **Register** with Firebase Authentication  
+- Form validation (email format, password length, etc.)  
+- Error handling (invalid credentials, network issues)  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Home Screen  
+- Fetches albums data from public API:  
+   `https://jsonplaceholder.typicode.com/albums`  
+- Displays albums in a **responsive layout**:  
+  - Grid on tablets  
+  - List on mobile  
+- Each album animates into view with **Fade + Slide animation**  
+- **Hero Animation** between Home → Details screen  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Animations  
+- `TweenAnimationBuilder` → Fade & Slide transition for list/grid items  
+- `Hero` animation between Album Card & Details Screen  
+- Custom **page transition** with FadeTransition  
+
+### State Management  
+- Implemented using **Cubit (flutter_bloc)**  
+- Handles **Loading / Loaded / Error** states cleanly  
+
+### Clean Code  
+- **Services** → API requests  
+- **Cubits** → Business logic  
+- **Models** → Album model  
+- **Widgets** → UI components  
+- **Screens** → Login, Register, Home, Details  
+
